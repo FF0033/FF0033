@@ -1,0 +1,21 @@
+<header>
+    <div>
+        <nav>
+            <div class="logo">
+                <a class="nav-item" href="{{ .Site.BaseURL }}">
+                    <h1>{{ .Site.Title }}</h1>
+                </a>
+            </div>
+            <div class="social">
+                <nav>
+                    {{ range .Site.Params.social }}
+                    <a href="{{ .url }}">
+                        <i class="icon {{ .icon }}"></i>
+
+                    </a>
+                    {{ end }}
+                </nav>
+            </div>
+        </nav>
+    </div>
+</header>

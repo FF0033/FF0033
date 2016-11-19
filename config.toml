@@ -1,0 +1,26 @@
+baseurl = "http://ff0033.space"
+title = "FF0033"
+languageCode = "en"
+
+copyright = "&copy; FF0033 2016 all rights reserved (whatever that means)"
+disqusShortname = "ff0033"
+googleAnalytics = ""
+
+[params]
+
+[params.highlight]
+style = "dracula"
+# languages are bloat
+languages = []
+
+[[params.social]]
+url = "https://github.com/FF0033"
+icon = "github"
+
+[[params.social]]
+url = "https://twitter.com/255_0_51"
+icon = "twitter"
+
+[[params.social]]
+url = "/index.xml"
+icon = "rss"
