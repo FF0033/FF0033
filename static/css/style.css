@@ -168,4 +168,7 @@ h2.subtitle+h1{
     nav div.logo+.social{
         margin-top:1.5rem;
     }
+    footer p{
+        display:block;
+    }
 }
