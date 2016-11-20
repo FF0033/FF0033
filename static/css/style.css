@@ -17,16 +17,38 @@ body{
     margin:0 auto;
     color:#282a36;
 }
-
-a{
+nav a[href]{
+    box-shadow:0 -2px 0 0 #f03 inset;
     color:#f03;
     text-decoration:none;
-    box-shadow:0 -2px 0 0 #f03 inset;
+    transition:none;
 }
-a[href]:hover{
+nav a[href]:hover{
+    box-shadow:0 -2px 0 0 #f03 inset;
+    color:#fff8f5;
+    background:#f03;
+    text-decoration:none;
+    transition:all 0.0s ease,background 0.6s ease, outline 0.6s ease;
+    transition-delay:0.15s;
+}
+div.container a[href]{
+    color:#f03;
+    text-decoration:none;
+    background:linear-gradient(#f03,#f03),linear-gradient(#f03,#f03),linear-gradient(#f03,#f03);
+    text-shadow: .03em 0 #fff8f5,-.03em 0 #fff8f5,0 .03em #fff8f5,0 -.03em #fff8f5,.06em 0 #fff8f5,-.06em 0 #fff8f5,.09em 0 #fff8f5,-.09em 0 #fff8f5,.12em 0 #fff8f5,-.12em 0 #fff8f5,.15em 0 #fff8f5,-.15em 0 #fff;
+    background-size: .05em 1px,.05em 1px,1px 1px;
+    background-repeat: no-repeat,no-repeat,repeat-x;
+    background-position: 0 95%,100% 95%,0 95%;
+    outline:4px solid transparent;
+    transition:none;
+}
+div.container a[href]:hover{
     background:#f03;
     outline:4px solid #f03;
     color:#fff8f5;
+    text-shadow:none;
+    transition:all 0.0s ease,background 0.6s ease, outline 0.6s ease;
+    transition-delay:0.15s;
 }
 code[class]{
     font:14px/20px "Noto Mono", monospace;
@@ -75,11 +97,13 @@ div.logo a:before{
     display:inline-block;
     vertical-align:-1px;
     margin-right:0.25rem;
-    outline:2px solid #f03;
+    border:2px solid #f03;
+    margin-bottom:-2px;
+
 }
 div.logo a:hover:before{
     outline:2px solid #282a36;
-    outline-offset:2px;
+    outline-offset:0;
 }
 div.social{
     width:50%;
