@@ -5,8 +5,12 @@
 
 html{
     background-color:#8b8a92;
+    background-image:url('../bg.jpg');
     font:18px/30px "Noto Serif", "Georgia", "Liberation Serif", serif;
-    padding:2rem;
+    padding-top:2rem;
+    padding-bottom:50vh;
+    overflow-y:scroll;
+
 }
 body{    
     max-width:46rem;
@@ -17,6 +21,12 @@ body{
 a{
     color:#f03;
     text-decoration:none;
+    box-shadow:0 -2px 0 0 #f03 inset;
+}
+a[href]:hover{
+    background:#f03;
+    outline:4px solid #f03;
+    color:#fff;
 }
 code[class]{
     font:14px/20px "Noto Mono", monospace;
@@ -25,11 +35,14 @@ code[class]{
 
 footer{
     padding-top:1rem;
+    text-align:center;
 }
 footer p{
     font-size:0.7rem;
-    color:#abc;
-    text-align:center;
+    color:#aab;
+    padding:0.25rem 0.75rem;
+    background:rgba(0,0,0,0.15);
+    display:inline;
 }
 
 div.container{    
@@ -63,6 +76,10 @@ div.logo a:before{
     margin-right:0.25rem;
     outline:2px solid #f03;
 }
+div.logo a:hover:before{
+    outline:2px solid #282a36;
+    outline-offset:2px;
+}
 div.social{
     width:50%;
     display:inline-block;
@@ -71,11 +88,35 @@ div.social{
 div.social a{
     display:inline-block;
     background:#fff;
-    padding:0.5rem 0.8rem;
+    padding:0.35rem 0.8rem;
 }
 div.social a+a{
     margin-left:0.25rem;
 }
-div.social i{
-    font-style:normal;
+
+a.is-disabled{
+    color:#aab;
+    box-shadow:initial;
+    text-decoration:line-through;
+}
+
+.level a{
+    font-size:1rem;
+    display:inline;
+}
+.level>a:nth-of-type(2){
+    float:right;
+}
+
+article+article{
+    padding-top:1rem;
+    margin-top:2rem;
+    border-top:1px solid #dde;
+}
+
+div.content img{
+    max-width:100%;
+    height:auto;
+    margin:2rem auto 3rem auto;
+    display:block;
 }
