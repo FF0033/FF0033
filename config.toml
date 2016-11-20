@@ -10,8 +10,7 @@ googleAnalytics = ""
 
 [params.highlight]
 style = "dracula"
-# languages are bloat
-languages = []
+# languages = []
 
 [[params.social]]
 url = "https://github.com/FF0033"
