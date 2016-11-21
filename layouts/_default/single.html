@@ -2,8 +2,10 @@
 {{ partial "nav" . }}
 <section>
   <div class="container">
-    <h2 class="subtitle">{{ .Date.Format "January 2, 2006" }}</h2>
-    <h1 class="title">{{ .Title }}</h1>
+    <div class="hero" style="background-image:url('/hero/{{ .Params.hero }}')">
+        <h2 class="subtitle {{ .Params.subtitlecolour }}">{{ .Date.Format "January 2, 2006" }}</h2>
+        <h1 class="title {{ .Params.titlecolour }}">{{ .Title }}</h1>
+    </div>
     <div class="content">
       {{ .Content }}
     </div>
