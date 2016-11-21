@@ -164,6 +164,7 @@ h2.subtitle+h1{
     background-color:#282a36;
     height:16rem;
     position:relative;
+    outline:4px solid #282a36;
 }
 .hero h2.light,
 .hero h1.light{
@@ -177,6 +178,9 @@ h2.subtitle+h1{
     position:absolute;
     bottom:0;
     margin-bottom:3rem;
+}
+.hero+.content{
+    margin-top:2rem;
 }
 
 @media(max-width:512px){
