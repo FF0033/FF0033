@@ -69,6 +69,7 @@ footer a{
     background:rgba(0,0,0,0.15);
     display:inline;
     white-space:nowrap;
+    text-decoration:none;
 }
 footer div div{ 
      margin-bottom:0.5rem;
