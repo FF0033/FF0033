@@ -1,18 +1,12 @@
 <footer>
     <div>
-        <p>{{ .Site.Copyright | safeHTML }}</p>
+        <div><p>{{ .Site.Copyright | safeHTML }}</p></div>
         {{ $lastTrack := getJSON "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=FF0033&api_key=8438556a1fcf5551d51a1975d8043c17&format=json&nowplaying=true" }}
-
-        {{ range first 1 $lastTrack.recenttracks.track }}
+        {{ range $lastTrack.recenttracks.track }}
             {{ if .name }}
-            <a href="//last.fm/user/FF0033" target="_blank">{{ .name }}</a>
+            <a href="{{ .url }}" target="_blank">{{ .name }}</a>
             {{ end }}
         {{ end }}
-
-
-</ul>
-
-
     </div>
 </footer>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
