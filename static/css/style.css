@@ -163,7 +163,6 @@ h2.subtitle+h1{
     background-position:center;
     background-size:cover;
     padding:1rem 3.5rem;
-    margin:1.5rem 0 0 0;
     color:#fff8f5;
     background-color:#282a36;
     height:13rem;
@@ -183,7 +182,7 @@ h2.subtitle+h1{
     margin-bottom:3rem;
 }
 .hero+.container{
-    margin-top:1.5rem;
+    margin-top:1.2rem;
 }
 
 @media(max-width:512px){
