@@ -1,10 +1,10 @@
 <footer>
     <div>
         <div><p>{{ .Site.Copyright | safeHTML }}</p></div>
-        {{ $lastTrack := getJSON "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=FF0033&api_key=8438556a1fcf5551d51a1975d8043c17&format=json&nowplaying=true" }}
+        {{ $lastTrack := getJSON .Site.Params.lastfm.url }}
         {{ range $lastTrack.recenttracks.track }}
             {{ if .name }}
-            <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+                <a href="{{ .url }}" target="_blank">{{ .name }}</a>
             {{ end }}
         {{ end }}
     </div>
